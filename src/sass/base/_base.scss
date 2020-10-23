@@ -1,0 +1,19 @@
+// Resets, typography rules, etc go here
+// Refer to the Sass Structure when needed
+
+html, body {
+  font-family: 'Inter', sans-serif;
+
+  @supports (font-variation-settings: normal) {
+    font-family: 'Inter var';
+    // font-feature-settings: 'cv03', 'cv04', 'frac';
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tighter;
+  }
+
+  p, li {
+    @apply tracking-tight;
+  }
+}
